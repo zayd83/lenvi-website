@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenvi Letselschade — Persoonlijke juridische bijstand na een verkeersongeval</title>
+  <meta name="description" content="Letselschade na een verkeersongeval? Lenvi voert uw zaak met persoonlijke aandacht. Geen kosten vooraf. No cure, no pay." />
+  <meta name="theme-color" content="#0B1C33" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Custom cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Mobile nav overlay -->
+<nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <a href="#werkwijze" class="mobile-nav-link">Werkwijze</a>
+  <a href="#over" class="mobile-nav-link">Over ons</a>
+  <a href="#faq" class="mobile-nav-link">FAQ</a>
+  <a href="#contact" class="mobile-nav-link">Contact</a>
+  <a href="#contact" class="btn btn-primary mobile-nav-cta">Meld uw zaak aan <span class="arrow">→</span></a>
+</nav>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="container nav">
+    <a href="#" class="logo">Lenvi<span>.</span></a>
+
+    <nav class="nav-links" aria-label="Hoofdnavigatie">
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#over">Over ons</a>
+      <a href="#faq">Veelgestelde vragen</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary nav-cta">
+      Meld uw zaak aan <span class="arrow">→</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+
+  <div class="container hero-grid">
+
+    <!-- Left: text content -->
+    <div class="hero-content">
+      <span class="eyebrow reveal">Letselschade · No Cure, No Pay</span>
+
+      <h1 class="reveal reveal-delay-1">
+        Wij voeren <em>uw zaak</em>,<br>u richt zich op herstel.
+      </h1>
+
+      <p class="hero-sub reveal reveal-delay-2">
+        Persoonlijke juridische begeleiding zonder kosten vooraf. Wij zorgen dat u krijgt waar u recht op heeft — en blijven betrokken van eerste melding tot volledige uitkering.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#contact" class="btn btn-primary magnetic">
+          Meld uw zaak aan <span class="arrow">→</span>
+        </a>
+        <a href="tel:0614119613" class="btn btn-ghost magnetic">
+          Bel direct
+        </a>
+      </div>
+
+      <div class="hero-meta reveal reveal-delay-4">
+        <div class="hero-meta-item">No cure, no pay</div>
+        <div class="hero-meta-item">Vrijblijvende intake</div>
+        <div class="hero-meta-item">Persoonlijk contact</div>
+      </div>
+    </div>
+
+    <!-- Right: visual card -->
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="hero-card tilt-card">
+        <!-- Decorative rings -->
+        <div class="card-ring card-ring-1"></div>
+        <div class="card-ring card-ring-2"></div>
+
+        <!-- Live badge top-right -->
+        <div class="card-badge">
+          <div class="card-badge-dot"></div>
+          <span>500+ Zaken behandeld</span>
+        </div>
+
+        <!-- Center scales icon -->
+        <div class="card-icon-wrap">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Scales of justice -->
+            <line x1="32" y1="8" x2="32" y2="56" stroke="#C49A5C" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="16" y1="14" x2="48" y2="14" stroke="#C49A5C" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Left pan -->
+            <line x1="16" y1="14" x2="8" y2="32" stroke="#C49A5C" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="8" y1="32" x2="24" y2="32" stroke="#C49A5C" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M8 32 Q16 40 24 32" stroke="#C49A5C" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- Right pan -->
+            <line x1="48" y1="14" x2="40" y2="32" stroke="#C49A5C" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="40" y1="32" x2="56" y2="32" stroke="#C49A5C" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M40 32 Q48 40 56 32" stroke="#C49A5C" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+            <!-- Base -->
+            <line x1="24" y1="56" x2="40" y2="56" stroke="#C49A5C" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- Monogram -->
+        <div class="card-monogram">L</div>
+
+        <!-- No cure pill -->
+        <div class="card-pill">
+          <div class="card-pill-check">
+            <svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </div>
+          <span>No cure, no pay</span>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer">
+          <div class="card-footer-name">
+            <strong>Nasr Essalhi</strong>
+            <span>Oprichter &amp; Jurist</span>
+          </div>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="15" stroke="rgba(196,154,92,0.3)" stroke-width="1"/>
+            <text x="16" y="21" text-anchor="middle" fill="#C49A5C" font-family="serif" font-size="14" font-style="italic">L</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+
+      <div class="stat-item reveal">
+        <div class="stat-value-row">
+          <span class="stat-number" data-target="500" data-suffix="+">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">Behandelde zaken</span>
+      </div>
+
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-value-row">
+          <span class="stat-number" data-target="98" data-suffix="%">0</span>
+          <span class="stat-suffix">%</span>
+        </div>
+        <span class="stat-label">Cliënttevredenheid</span>
+      </div>
+
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-value-row">
+          <span class="stat-pre">€</span>
+          <span class="stat-number" data-target="2" data-suffix="M+">0</span>
+          <span class="stat-suffix">M+</span>
+        </div>
+        <span class="stat-label">Aan schade vergoed</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ WERKWIJZE ============ -->
+<section id="werkwijze">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="eyebrow">De werkwijze</span>
+      <h2>Helder traject.<br>Eén aanspreekpunt.</h2>
+      <p>U meldt zich aan, wij nemen het over. Van het verzamelen van medische stukken tot het aansprakelijk stellen van de tegenpartij — u hoort van ons, niet van een afdeling.</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step tilt-card reveal" data-num="01">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 3a4 4 0 100 8 4 4 0 000-8z" stroke="#0B1C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </div>
+        <span class="step-num">01 — Aanmelden</span>
+        <h3>Vrijblijvend gesprek</h3>
+        <p>U vertelt ons wat er gebeurd is. Wij beoordelen kosteloos of uw zaak kansrijk is en leggen helder uit wat u kunt verwachten.</p>
+      </div>
+
+      <div class="step tilt-card reveal reveal-delay-1" data-num="02">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#0B1C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </div>
+        <span class="step-num">02 — Dossier</span>
+        <h3>Stukken verzamelen</h3>
+        <p>Wij verzamelen alle medische, juridische en financiële stukken die nodig zijn om uw zaak maximaal te onderbouwen.</p>
+      </div>
+
+      <div class="step tilt-card reveal reveal-delay-2" data-num="03">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#0B1C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </div>
+        <span class="step-num">03 — Aansprakelijk</span>
+        <h3>Tegenpartij aanspreken</h3>
+        <p>Wij stellen de verzekeraar aansprakelijk en voeren alle onderhandelingen. U hoeft hier niets voor te doen.</p>
+      </div>
+
+      <div class="step tilt-card reveal reveal-delay-3" data-num="04">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="#0B1C33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </div>
+        <span class="step-num">04 — Uitkering</span>
+        <h3>Schade vergoed</h3>
+        <p>U ontvangt waar u recht op heeft — smartengeld, gederfd inkomen en alle gemaakte kosten volledig vergoed.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ OVER ONS ============ -->
+<section id="over" class="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-text reveal">
+        <span class="eyebrow">Over Lenvi</span>
+        <h2>Bij ons bent u geen dossiernummer.</h2>
+
+        <p>
+          Lenvi is opgericht vanuit één overtuiging: juridische bijstand hoort persoonlijk te zijn. Wie net een verkeersongeval heeft meegemaakt, zit niet te wachten op formulieren-fabrieken en eindeloze wachtrijen.
+        </p>
+        <p>
+          Wij houden onze caseload bewust klein. Dat betekent: één vaste jurist die uw verhaal kent, korte lijnen, en eerlijke verwachtingen. Geen verrassingen, geen kleine lettertjes.
+        </p>
+
+        <div class="about-values">
+          <div class="about-value">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 16 16"><path d="M8 1l2 4 4.5.65-3.25 3.17.77 4.49L8 11.25l-4 2.06.77-4.49L1.5 5.65 6 5z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="about-value-text">
+              <strong>Persoonlijke aandacht</strong>
+              <span>Eén jurist, uw dossier, uw zaak</span>
+            </div>
+          </div>
+          <div class="about-value">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 16 16"><path d="M8 14A6 6 0 108 2a6 6 0 000 12zM8 6v4M8 5v-.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div class="about-value-text">
+              <strong>Volledige transparantie</strong>
+              <span>Geen verborgen kosten of verrassingen</span>
+            </div>
+          </div>
+          <div class="about-value">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </div>
+            <div class="about-value-text">
+              <strong>No cure, no pay</strong>
+              <span>U betaalt niets als uw zaak niet slaagt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <blockquote class="about-quote">
+          "Een verkeersongeval overkomt u onverwacht. Onze rol is om u alles uit handen te nemen — zodat herstel het enige is waar u nog over hoeft na te denken."
+        </blockquote>
+        <div class="about-signature">
+          Nasr Essalhi · Oprichter Lenvi
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="container">
+
+    <div class="section-header centered reveal">
+      <span class="eyebrow">Veelgestelde vragen</span>
+      <h2>Wat u vooraf wilt weten.</h2>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <details class="faq-item">
+        <summary>
+          Wat kost dit mij?
+          <span class="faq-toggle">+</span>
+        </summary>
+        <p>Niets. Wij werken op basis van no cure, no pay. Onze kosten worden vergoed door de verzekeraar van de tegenpartij wanneer uw zaak slaagt. U betaalt vooraf en achteraf niets uit eigen zak.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Hoe lang duurt zo'n traject gemiddeld?
+          <span class="faq-toggle">+</span>
+        </summary>
+        <p>Dat hangt af van de complexiteit en het herstel. Eenvoudige zaken zijn binnen 6 tot 12 maanden afgehandeld. Bij ernstig letsel kan een traject langer duren — wij houden u in elke fase op de hoogte.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Heb ik recht op smartengeld?
+          <span class="faq-toggle">+</span>
+        </summary>
+        <p>In de meeste gevallen waarbij u letsel heeft opgelopen door schuld van een ander, ja. De hoogte hangt af van de aard van het letsel, de gevolgen en de duur van uw herstel. In het intakegesprek krijgt u hier een eerste inschatting van.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Moet ik zelf contact opnemen met de tegenpartij?
+          <span class="faq-toggle">+</span>
+        </summary>
+        <p>Nee. Zodra u uw zaak bij ons aanmeldt, voeren wij alle communicatie met de tegenpartij en hun verzekeraar. U hoeft hier verder niets in te doen.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Kan ik me nog aanmelden als het ongeval langer geleden is?
+          <span class="faq-toggle">+</span>
+        </summary>
+        <p>Ja, de verjaringstermijn voor letselschade is doorgaans vijf jaar. Twijfelt u? Meld u dan vrijblijvend aan — wij beoordelen kosteloos of uw zaak nog kansrijk is.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="cta">
+  <div class="container">
+    <div class="cta-grid">
+
+      <div class="cta-info reveal">
+        <span class="eyebrow">Meld uw zaak aan</span>
+        <h2>Een gesprek kost u niets.</h2>
+        <p>Stuur ons een bericht of bel direct. Binnen één werkdag ontvangt u een persoonlijke reactie van onze jurist.</p>
+
+        <div class="cta-channels">
+
+          <a href="tel:0614119613" class="cta-channel">
+            <span class="cta-channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.8 10.8 19.79 19.79 0 01.73 2.2 2 2 0 012.72 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </span>
+            <div>
+              <strong>Bellen</strong>
+              <span class="detail">06 1411 9613</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/31614119613" class="cta-channel">
+            <span class="cta-channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <strong>WhatsApp</strong>
+              <span class="detail">Direct contact</span>
+            </div>
+          </a>
+
+          <a href="mailto:contact@lenvi.nl" class="cta-channel">
+            <span class="cta-channel-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </span>
+            <div>
+              <strong>E-mail</strong>
+              <span class="detail">contact@lenvi.nl</span>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="cta-trust">
+          <span class="cta-trust-dot"></span>
+          Reactie binnen 1 werkdag gegarandeerd
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <form name="aanmelding" method="POST" data-netlify="true" id="contactForm">
+          <input type="hidden" name="form-name" value="aanmelding" />
+
+          <div class="form-group">
+            <label for="name">Uw naam</label>
+            <input id="name" name="name" type="text" placeholder="Voor- en achternaam" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefoonnummer</label>
+            <input id="phone" name="phone" type="tel" placeholder="06 ..." required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input id="email" name="email" type="email" placeholder="naam@voorbeeld.nl" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Korte omschrijving</label>
+            <textarea id="message" name="message" placeholder="Wat is er gebeurd? Wanneer? Welk letsel?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary magnetic">
+            Verstuur aanmelding <span class="arrow">→</span>
+          </button>
+          <p class="form-note">U ontvangt binnen 1 werkdag een persoonlijke reactie.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <a href="#" class="logo">Lenvi<span>.</span></a>
+        <p class="footer-tag">Persoonlijke juridische bijstand voor mensen met letselschade na een verkeersongeval. No cure, no pay.</p>
+        <div class="footer-badge">No Cure, No Pay</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="#werkwijze">Werkwijze</a></li>
+          <li><a href="#over">Over ons</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:0614119613">06 1411 9613</a></li>
+          <li><a href="mailto:contact@lenvi.nl">contact@lenvi.nl</a></li>
+          <li><a href="https://wa.me/31614119613">WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Lenvi Letselschade. Alle rechten voorbehouden.</span>
+      <span>
+        <a href="#">Privacybeleid</a> ·
+        <a href="#">Algemene voorwaarden</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/31614119613" class="wa-float" aria-label="WhatsApp ons">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
