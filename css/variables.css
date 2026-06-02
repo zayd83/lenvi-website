@@ -1,52 +1,56 @@
 /* ============================================
-   Design Tokens — Lenvi Letselschade Premium
+   Design Tokens — Lenvi Letselschade
+   Brand: Groen #024d40 · Goud #b49d72
+   Fonts: Alice (serif) · Amiko (sans)
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Amiko:wght@400;600;700&display=swap');
 
 :root {
-  /* Core Colors */
-  --black:        #070B13;
-  --navy-deep:    #0B1C33;
-  --navy:         #0E2244;
-  --navy-mid:     #152F54;
-  --navy-light:   #1C3D6B;
-  --gold:         #C49A5C;
-  --gold-bright:  #D4AB6E;
-  --gold-light:   #E3C08C;
-  --gold-pale:    #F5E6C8;
-  --cream:        #F6F3EE;
+  /* ── Brand Colors ── */
+  --green-deep:   #010E0B;   /* hero/footer achtergrond */
+  --green-dark:   #011F1A;   /* donkere secties */
+  --green:        #024d40;   /* primaire merkkleur */
+  --green-mid:    #035940;   /* hover states */
+  --green-light:  #047A58;   /* accenten */
+  --green-pale:   #E6F2EE;   /* lichte achtergrond tint */
+
+  --gold:         #B49D72;   /* goud merkkleur */
+  --gold-bright:  #C4AE85;   /* iets lichter */
+  --gold-light:   #D4C098;   /* nog lichter */
+  --gold-pale:    #EDE0C6;   /* erg licht */
+
+  --cream:        #F7F4EF;
   --cream-mid:    #EDE8DF;
-  --cream-deep:   #E4DDD0;
+  --cream-deep:   #E3DDD0;
   --white:        #FFFFFF;
-  --ink:          #101827;
-  --muted:        #64748B;
-  --muted-warm:   #7A6E61;
+  --ink:          #0F1A17;   /* tekst op lichte bg */
+  --muted:        #5A6B65;   /* subtiele tekst */
 
   /* Lines */
-  --line:         rgba(14, 34, 68, 0.10);
-  --line-soft:    rgba(14, 34, 68, 0.06);
+  --line:         rgba(2, 77, 64, 0.10);
+  --line-soft:    rgba(2, 77, 64, 0.06);
   --line-dark:    rgba(255, 255, 255, 0.08);
-  --line-gold:    rgba(196, 154, 92, 0.28);
+  --line-gold:    rgba(180, 157, 114, 0.28);
 
-  /* Typography */
-  --serif: 'Fraunces', 'Times New Roman', serif;
-  --sans:  'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Typography — officiële merkfonts */
+  --serif: 'Alice', 'Times New Roman', serif;
+  --sans:  'Amiko', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Shadows */
   --shadow-xs:   0 1px 4px rgba(0,0,0,0.06);
-  --shadow-sm:   0 4px 14px rgba(0,0,0,0.08);
-  --shadow-md:   0 10px 30px rgba(0,0,0,0.12);
+  --shadow-sm:   0 4px 14px rgba(0,0,0,0.09);
+  --shadow-md:   0 10px 30px rgba(0,0,0,0.13);
   --shadow-lg:   0 24px 64px rgba(0,0,0,0.18);
   --shadow-xl:   0 40px 100px rgba(0,0,0,0.28);
-  --shadow-card: 0 32px 80px -12px rgba(11, 28, 51, 0.55);
-  --shadow-gold: 0 8px 32px rgba(196, 154, 92, 0.25);
+  --shadow-card: 0 32px 80px -12px rgba(1, 15, 11, 0.60);
+  --shadow-gold: 0 8px 32px rgba(180, 157, 114, 0.30);
 
   /* Gradients */
-  --gradient-hero:  linear-gradient(145deg, #050810 0%, #0B1C33 45%, #0E2244 100%);
-  --gradient-navy:  linear-gradient(135deg, #0B1C33 0%, #0E2244 100%);
-  --gradient-gold:  linear-gradient(135deg, #C49A5C 0%, #E3C08C 100%);
-  --gradient-cream: linear-gradient(180deg, #F6F3EE 0%, #EDE8DF 100%);
+  --gradient-hero:  linear-gradient(145deg, #010E0B 0%, #011F1A 40%, #024d40 100%);
+  --gradient-dark:  linear-gradient(135deg, #011F1A 0%, #024d40 100%);
+  --gradient-gold:  linear-gradient(135deg, #B49D72 0%, #D4C098 100%);
+  --gradient-cream: linear-gradient(180deg, #F7F4EF 0%, #EDE8DF 100%);
 
   /* Layout */
   --container: 1300px;

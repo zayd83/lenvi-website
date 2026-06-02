@@ -23,8 +23,11 @@
     const COLOR = '196,154,92';
 
     function resize() {
-      W = canvas.width  = canvas.offsetWidth;
-      H = canvas.height = canvas.offsetHeight;
+      /* Use parent section dimensions — canvas.offsetWidth can return 0
+         when canvas has no intrinsic size before layout */
+      const hero = canvas.parentElement;
+      W = canvas.width  = hero ? hero.offsetWidth  : window.innerWidth;
+      H = canvas.height = hero ? hero.offsetHeight : window.innerHeight;
     }
 
     function makeParticle() {
