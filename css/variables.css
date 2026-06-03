@@ -8,60 +8,56 @@
 
 :root {
   /* ── Brand Colors ── */
-  --green-deep:   #010E0B;   /* hero/footer achtergrond */
-  --green-dark:   #011F1A;   /* donkere secties */
-  --green:        #024d40;   /* primaire merkkleur */
-  --green-mid:    #035940;   /* hover states */
-  --green-light:  #047A58;   /* accenten */
-  --green-pale:   #E6F2EE;   /* lichte achtergrond tint */
+  --green-deep:   #010E0B;
+  --green-dark:   #011F1A;
+  --green:        #024d40;
+  --green-mid:    #035940;
+  --green-light:  #047A58;
+  --green-pale:   #E6F2EE;
 
-  --gold:         #B49D72;   /* goud merkkleur */
-  --gold-bright:  #C4AE85;   /* iets lichter */
-  --gold-light:   #D4C098;   /* nog lichter */
-  --gold-pale:    #EDE0C6;   /* erg licht */
+  --gold:         #B49D72;
+  --gold-bright:  #C9B48A;
+  --gold-light:   #D9C9A3;
+  --gold-pale:    #F0E8D6;
 
-  --cream:        #F7F4EF;
+  --cream:        #F8F5F0;
   --cream-mid:    #EDE8DF;
   --cream-deep:   #E3DDD0;
   --white:        #FFFFFF;
-  --ink:          #0F1A17;   /* tekst op lichte bg */
-  --muted:        #5A6B65;   /* subtiele tekst */
+  --ink:          #0F1A17;
+  --muted:        #6B7C77;
 
   /* Lines */
-  --line:         rgba(2, 77, 64, 0.10);
-  --line-soft:    rgba(2, 77, 64, 0.06);
-  --line-dark:    rgba(255, 255, 255, 0.08);
-  --line-gold:    rgba(180, 157, 114, 0.28);
+  --line:       rgba(2,77,64,0.09);
+  --line-light: rgba(255,255,255,0.10);
+  --line-gold:  rgba(180,157,114,0.25);
 
-  /* Typography — officiële merkfonts */
+  /* Typography */
   --serif: 'Alice', 'Times New Roman', serif;
-  --sans:  'Amiko', -apple-system, BlinkMacSystemFont, sans-serif;
+  --sans:  'Amiko', system-ui, sans-serif;
 
   /* Shadows */
-  --shadow-xs:   0 1px 4px rgba(0,0,0,0.06);
-  --shadow-sm:   0 4px 14px rgba(0,0,0,0.09);
-  --shadow-md:   0 10px 30px rgba(0,0,0,0.13);
-  --shadow-lg:   0 24px 64px rgba(0,0,0,0.18);
-  --shadow-xl:   0 40px 100px rgba(0,0,0,0.28);
-  --shadow-card: 0 32px 80px -12px rgba(1, 15, 11, 0.60);
-  --shadow-gold: 0 8px 32px rgba(180, 157, 114, 0.30);
+  --shadow-sm:   0 2px 12px rgba(0,0,0,0.06);
+  --shadow-md:   0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg:   0 24px 64px rgba(0,0,0,0.16);
+  --shadow-xl:   0 40px 100px rgba(0,0,0,0.25);
+  --shadow-gold: 0 6px 24px rgba(180,157,114,0.28);
+  --shadow-card: 0 32px 80px -12px rgba(1,14,11,0.55);
 
   /* Gradients */
-  --gradient-hero:  linear-gradient(145deg, #010E0B 0%, #011F1A 40%, #024d40 100%);
-  --gradient-dark:  linear-gradient(135deg, #011F1A 0%, #024d40 100%);
-  --gradient-gold:  linear-gradient(135deg, #B49D72 0%, #D4C098 100%);
-  --gradient-cream: linear-gradient(180deg, #F7F4EF 0%, #EDE8DF 100%);
+  --grad-hero:  linear-gradient(160deg, rgba(1,14,11,0.88) 0%, rgba(2,77,64,0.72) 100%);
+  --grad-dark:  linear-gradient(135deg, #011F1A 0%, #024d40 100%);
+  --grad-gold:  linear-gradient(135deg, #B49D72 0%, #D9C9A3 100%);
+  --grad-cream: linear-gradient(180deg, #F8F5F0 0%, #EDE8DF 100%);
 
   /* Layout */
-  --container: 1300px;
-  --radius:    8px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --container: 1280px;
+  --radius:    6px;
+  --radius-lg: 14px;
+  --radius-xl: 22px;
 
   /* Transitions */
-  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-out:    cubic-bezier(0.0, 0, 0.2, 1);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-  --dur:         0.32s;
-  --dur-slow:    0.65s;
+  --ease:     cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --dur:      0.28s;
 }
