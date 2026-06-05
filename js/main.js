@@ -173,15 +173,5 @@
     }, { passive: true });
   })();
 
-  /* ── FAQ grid layout on home ── */
-  var faqGrid = document.querySelector('.faq-home-grid');
-  if (faqGrid) {
-    var mq = window.matchMedia('(min-width: 900px)');
-    var applyFaqLayout = function (e) {
-      faqGrid.style.gridTemplateColumns = e.matches ? '1fr 1.2fr' : '1fr';
-    };
-    mq.addEventListener('change', applyFaqLayout);
-    applyFaqLayout(mq);
-  }
 
 })();

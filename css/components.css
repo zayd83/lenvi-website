@@ -24,8 +24,17 @@
   background: var(--grad-gold);
   color: var(--green-deep);
   box-shadow: 0 4px 18px rgba(180,157,114,0.32);
+  position: relative; overflow: hidden;
 }
-.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(180,157,114,0.48); }
+.btn-gold::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 45%;
+  background: rgba(255,255,255,0.18);
+  border-radius: 100px 100px 80% 80% / 100px 100px 40% 40%;
+  pointer-events: none;
+}
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(180,157,114,0.52); }
 
 .btn-white {
   background: var(--white);
@@ -34,18 +43,20 @@
 .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
 
 .btn-outline-white {
-  background: transparent;
+  background: rgba(255,255,255,0.06);
   color: var(--white);
-  border: 1.5px solid rgba(255,255,255,0.28);
+  border: 1.5px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
-.btn-outline-white:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.55); }
+.btn-outline-white:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.50); transform: translateY(-2px); }
 
 .btn-outline-green {
   background: transparent;
   color: var(--green);
-  border: 1.5px solid rgba(2,77,64,0.20);
+  border: 1.5px solid rgba(2,77,64,0.22);
 }
-.btn-outline-green:hover { border-color: var(--green); background: var(--green-pale); }
+.btn-outline-green:hover { border-color: var(--green); background: var(--green-pale); transform: translateY(-2px); }
 
 .btn svg { width: 16px; height: 16px; flex-shrink: 0; transition: transform var(--dur) var(--ease); }
 .btn:hover svg { transform: translateX(3px); }
@@ -117,24 +128,31 @@ textarea { min-height: 120px; resize: vertical; }
 /* ── Mobile nav ── */
 .mobile-nav {
   position: fixed; inset: 0;
-  background: var(--green-deep);
+  background: linear-gradient(160deg, #011208 0%, #024d40 100%);
   z-index: 800;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: 0.1rem;
   opacity: 0; pointer-events: none;
-  transition: opacity 0.38s var(--ease);
+  transition: opacity 0.40s var(--ease);
+}
+.mobile-nav::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 70% 30%, rgba(180,157,114,0.08) 0%, transparent 60%);
+  pointer-events: none;
 }
 .mobile-nav.open { opacity: 1; pointer-events: all; }
 
 .mobile-nav a {
   font-family: var(--serif);
   font-size: clamp(2rem, 6vw, 3rem);
-  color: rgba(248,245,240,0.55);
-  padding: 0.3rem 0;
-  transition: color 0.2s;
+  color: rgba(248,245,240,0.50);
+  padding: 0.4rem 0;
+  transition: color 0.22s, transform 0.22s;
+  position: relative; z-index: 1;
 }
-.mobile-nav a:hover, .mobile-nav a.active { color: var(--white); }
+.mobile-nav a:hover, .mobile-nav a.active { color: var(--white); transform: translateX(6px); }
 
 .mobile-nav-cta { margin-top: 2rem; }
 
@@ -176,25 +194,37 @@ textarea { min-height: 120px; resize: vertical; }
 .faq-item summary {
   list-style: none;
   display: flex; align-items: center; justify-content: space-between; gap: 2rem;
-  padding: 1.6rem 0;
+  padding: 1.75rem 0;
   font-family: var(--serif); font-size: 1.1rem; color: var(--green);
   cursor: pointer; user-select: none;
-  transition: color 0.2s;
+  transition: color 0.25s var(--ease);
 }
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary:hover { color: var(--gold); }
+.faq-item summary:hover { color: var(--green-mid); }
 
 .faq-icon {
-  width: 28px; height: 28px; flex-shrink: 0;
-  border: 1.5px solid var(--line);
+  width: 30px; height: 30px; flex-shrink: 0;
+  border: 1.5px solid rgba(2,77,64,0.18);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-size: 1rem; color: var(--gold);
-  transition: all 0.28s var(--ease);
+  font-size: 1.1rem; color: var(--green);
+  transition: all 0.30s var(--ease);
+  background: var(--cream);
+}
+.faq-item summary:hover .faq-icon {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--white);
 }
 .faq-item[open] .faq-icon {
   background: var(--green); border-color: var(--green); color: white;
   transform: rotate(45deg);
 }
 
-.faq-item p { padding: 0 2.5rem 1.6rem 0; font-size: 0.96rem; line-height: 1.78; }
+.faq-item p {
+  padding: 0 3rem 2rem 0;
+  font-size: 0.96rem; line-height: 1.80;
+  color: var(--muted);
+}
+
+.faq-item[open] summary { color: var(--green); }
