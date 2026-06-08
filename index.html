@@ -1,31 +1,45 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lenvi Letselschade — Persoonlijke juridische bijstand na een verkeersongeval</title>
+  <title>Lenvi Letselschade â€” Persoonlijke juridische bijstand na een verkeersongeval</title>
   <meta name="description" content="Letselschade na een verkeersongeval? Lenvi voert uw zaak met persoonlijke aandacht. Geen kosten vooraf. No cure, no pay." />
   <meta name="theme-color" content="#024d40" />
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-  <link rel="stylesheet" href="css/variables.css?v=2" />
-  <link rel="stylesheet" href="css/base.css?v=2" />
-  <link rel="stylesheet" href="css/components.css?v=2" />
-  <link rel="stylesheet" href="css/layout.css?v=2" />
+  <link rel="stylesheet" href="css/variables.css?v=3" />
+  <link rel="stylesheet" href="css/base.css?v=3" />
+  <link rel="stylesheet" href="css/components.css?v=3" />
+  <link rel="stylesheet" href="css/layout.css?v=3" />
 </head>
 <body>
 
 <div id="scrollBar"></div>
 
-<!-- Mobile nav -->
+<div class="mobile-nav-backdrop" id="navBackdrop"></div>
 <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-  <a href="werkwijze.html">Werkwijze</a>
-  <a href="over.html">Over ons</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn-gold mobile-nav-cta" style="margin-top:2rem;">
-    Meld uw zaak aan
-    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-  </a>
+  <div class="mobile-nav-header">
+    <a href="index.html"><img src="assets/icons/logo-wit.svg" alt="Lenvi" class="mobile-nav-logo" /></a>
+    <button class="mobile-nav-close" id="navClose" aria-label="Sluiten">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav-links">
+    <a href="werkwijze.html">Werkwijze</a>
+    <a href="over.html">Over ons</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-gold mobile-nav-cta">
+      Meld uw zaak aan
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <a href="tel:0614119613" class="mobile-nav-tel">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.6 10.5l-2-2a1 1 0 00-1.4 0l-.8.8a8.3 8.3 0 01-2.7-2.7l.8-.8a1 1 0 000-1.4l-2-2a1 1 0 00-1.4 0L2.6 3.8C1.9 4.5 1.7 5.5 2 6.5c1.1 3.6 6 8.5 9.6 9.6 1 .3 2 .1 2.7-.6l1.4-1.5a1 1 0 000-1.5z"/></svg>
+      06 1411 9613
+    </a>
+  </div>
 </nav>
 
 <!-- Header -->
@@ -53,9 +67,9 @@
 </header>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      HERO
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
@@ -68,7 +82,7 @@
       <div class="hero-left">
         <div class="hero-badge reveal">
           <span class="hero-badge-dot"></span>
-          No Cure, No Pay &nbsp;·&nbsp; Letselschade Specialist
+          No Cure, No Pay &nbsp;Â·&nbsp; Letselschade Specialist
         </div>
 
         <h1 class="reveal d1">
@@ -76,7 +90,7 @@
         </h1>
 
         <p class="hero-sub reveal d2">
-          Letselschade na een verkeersongeval? Lenvi neemt uw zaak volledig uit handen — van aanmelding tot uitkering. Persoonlijk, transparant, zonder kosten vooraf.
+          Letselschade na een verkeersongeval? Lenvi neemt uw zaak volledig uit handen â€” van aanmelding tot uitkering. Persoonlijk, transparant, zonder kosten vooraf.
         </p>
 
         <div class="hero-actions reveal d3">
@@ -111,7 +125,7 @@
           </svg>
 
           <p class="hero-card-heading">Uw zaak in goede handen</p>
-          <p class="hero-card-sub">Eén vaste jurist, directe communicatie, maximale vergoeding — zonder kosten vooraf.</p>
+          <p class="hero-card-sub">EÃ©n vaste jurist, directe communicatie, maximale vergoeding â€” zonder kosten vooraf.</p>
 
           <div class="hero-card-divider"></div>
 
@@ -126,14 +140,14 @@
             <div class="hero-stat">
               <div>
                 <div class="hero-stat-val">98<span>%</span></div>
-                <div class="hero-stat-label">Cliënttevredenheid</div>
+                <div class="hero-stat-label">CliÃ«nttevredenheid</div>
               </div>
             </div>
             <div class="hero-card-divider" style="margin:0;"></div>
             <div class="hero-stat">
               <div>
-                <div class="hero-stat-val">€ 2<span>M+</span></div>
-                <div class="hero-stat-label">Vergoed aan cliënten</div>
+                <div class="hero-stat-val">â‚¬ 2<span>M+</span></div>
+                <div class="hero-stat-label">Vergoed aan cliÃ«nten</div>
               </div>
             </div>
           </div>
@@ -152,16 +166,16 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      WHY LENVI
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="why-section">
   <div class="container">
     <div class="why-header">
       <div>
         <span class="label reveal" style="color:var(--gold-light);">Waarom Lenvi</span>
         <h2 class="reveal d1">Uw recht, onze<br>verantwoordelijkheid.</h2>
-        <p class="reveal d2">Geen massaproductie, maar maatwerk. Wij geloven dat iedere cliënt persoonlijke aandacht verdient.</p>
+        <p class="reveal d2">Geen massaproductie, maar maatwerk. Wij geloven dat iedere cliÃ«nt persoonlijke aandacht verdient.</p>
       </div>
       <a href="over.html" class="btn btn-outline-white reveal d1" style="flex-shrink:0;">
         Over ons
@@ -190,8 +204,8 @@
             <circle cx="12" cy="7" r="4"/>
           </svg>
         </div>
-        <h3>Eén vaste jurist</h3>
-        <p>Geen call centers, geen doorverwijzingen. Eén jurist die uw dossier van A tot Z kent en altijd voor u bereikbaar is.</p>
+        <h3>EÃ©n vaste jurist</h3>
+        <p>Geen call centers, geen doorverwijzingen. EÃ©n jurist die uw dossier van A tot Z kent en altijd voor u bereikbaar is.</p>
       </div>
 
       <div class="why-card reveal d2">
@@ -202,7 +216,7 @@
           </svg>
         </div>
         <h3>Maximale vergoeding</h3>
-        <p>Smartengeld, gederfd inkomen, medische kosten — wij claimen elke schadepost en gaan altijd voor het maximale bedrag.</p>
+        <p>Smartengeld, gederfd inkomen, medische kosten â€” wij claimen elke schadepost en gaan altijd voor het maximale bedrag.</p>
       </div>
 
     </div>
@@ -210,9 +224,9 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      NUMBERS
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="numbers-strip">
   <div class="container">
     <div class="numbers-grid">
@@ -228,14 +242,14 @@
         <div class="number-val">
           <span class="count-up" data-target="98">0</span><span class="num-suffix">%</span>
         </div>
-        <div class="number-label">Cliënttevredenheid</div>
+        <div class="number-label">CliÃ«nttevredenheid</div>
       </div>
 
       <div class="number-item reveal d2">
         <div class="number-val">
-          <span class="num-suffix">€ </span><span class="count-up" data-target="2">0</span><span class="num-suffix">M+</span>
+          <span class="num-suffix">â‚¬ </span><span class="count-up" data-target="2">0</span><span class="num-suffix">M+</span>
         </div>
-        <div class="number-label">Vergoed aan cliënten</div>
+        <div class="number-label">Vergoed aan cliÃ«nten</div>
       </div>
 
     </div>
@@ -243,15 +257,15 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      PROCESS PREVIEW
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="process-section">
   <div class="container">
     <div class="process-header reveal">
       <span class="label label-center">De werkwijze</span>
       <h2 style="margin-top:1rem;">Van melding tot uitkering<br>in vier stappen.</h2>
-      <p>Helder, eerlijk en persoonlijk — u weet altijd wat de volgende stap is.</p>
+      <p>Helder, eerlijk en persoonlijk â€” u weet altijd wat de volgende stap is.</p>
     </div>
 
     <div class="process-steps">
@@ -277,7 +291,7 @@
         </div>
         <div class="process-step-tag">Dossier</div>
         <h3>Stukken verzamelen</h3>
-        <p>Wij verzamelen alle medische, juridische en financiële stukken die nodig zijn.</p>
+        <p>Wij verzamelen alle medische, juridische en financiÃ«le stukken die nodig zijn.</p>
       </div>
 
       <div class="process-step reveal d2">
@@ -301,7 +315,7 @@
         </div>
         <div class="process-step-tag">Uitkering</div>
         <h3>Schade vergoed</h3>
-        <p>U ontvangt alle vergoeding waar u recht op heeft — volledig en zonder kosten.</p>
+        <p>U ontvangt alle vergoeding waar u recht op heeft â€” volledig en zonder kosten.</p>
       </div>
 
     </div>
@@ -316,9 +330,9 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      ABOUT SPLIT (photo + quote)
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="about-section">
   <!-- Photo -->
   <div class="about-photo reveal">
@@ -334,12 +348,12 @@
   <div class="about-content reveal d1">
     <span class="label" style="color:var(--gold-light);">Over Lenvi</span>
     <h2>Bij ons bent u<br>geen dossiernummer.</h2>
-    <p>Lenvi is opgericht vanuit één overtuiging: juridische bijstand hoort persoonlijk te zijn. We houden onze caseload bewust klein zodat elke cliënt de aandacht krijgt die hij verdient.</p>
+    <p>Lenvi is opgericht vanuit Ã©Ã©n overtuiging: juridische bijstand hoort persoonlijk te zijn. We houden onze caseload bewust klein zodat elke cliÃ«nt de aandacht krijgt die hij verdient.</p>
     <div class="about-divider"></div>
     <blockquote class="about-quote-text">
-      "Een verkeersongeval overkomt u onverwacht. Onze rol is om u alles uit handen te nemen — zodat herstel het enige is waar u nog over hoeft na te denken."
+      "Een verkeersongeval overkomt u onverwacht. Onze rol is om u alles uit handen te nemen â€” zodat herstel het enige is waar u nog over hoeft na te denken."
     </blockquote>
-    <div class="about-author">Nasr Essalhi &nbsp;·&nbsp; Oprichter Lenvi</div>
+    <div class="about-author">Nasr Essalhi &nbsp;Â·&nbsp; Oprichter Lenvi</div>
     <div style="margin-top:2.5rem;">
       <a href="over.html" class="btn btn-outline-white">
         Lees meer over ons
@@ -350,16 +364,16 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FAQ PREVIEW
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="faq-home-section">
   <div class="container">
     <div class="faq-home-grid">
       <div class="reveal">
         <span class="label">Veelgestelde vragen</span>
         <h2 style="margin-top:1rem;">Alles wat u<br>wilt weten.</h2>
-        <p style="margin-top:1.25rem; max-width:360px;">Heeft u vragen? Wij beantwoorden ze graag — of bekijk onze volledige FAQ.</p>
+        <p style="margin-top:1.25rem; max-width:360px;">Heeft u vragen? Wij beantwoorden ze graag â€” of bekijk onze volledige FAQ.</p>
         <a href="faq.html" class="btn btn-outline-green" style="margin-top:2rem;">
           Alle vragen bekijken
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -388,9 +402,9 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      CTA STRIP
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="cta-strip">
   <div class="container">
     <div class="cta-strip-inner">
@@ -411,9 +425,9 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FOOTER
-════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -441,8 +455,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lenvi Letselschade. Alle rechten voorbehouden.</span>
-      <span><a href="#">Privacybeleid</a> · <a href="#">Algemene voorwaarden</a></span>
+      <span>Â© 2026 Lenvi Letselschade. Alle rechten voorbehouden.</span>
+      <span><a href="#">Privacybeleid</a> Â· <a href="#">Algemene voorwaarden</a></span>
     </div>
   </div>
 </footer>
@@ -451,6 +465,6 @@
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>

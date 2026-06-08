@@ -26,22 +26,37 @@
   /* ── Mobile nav ── */
   var hamburger = document.getElementById('hamburger');
   var mobileNav = document.getElementById('mobileNav');
+  var navBackdrop = document.getElementById('navBackdrop');
+  var navClose = document.getElementById('navClose');
+
+  function openNav() {
+    mobileNav.classList.add('open');
+    if (navBackdrop) navBackdrop.classList.add('open');
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    mobileNav.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    mobileNav.classList.remove('open');
+    if (navBackdrop) navBackdrop.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', function () {
-      var open = mobileNav.classList.toggle('open');
-      hamburger.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
-      mobileNav.setAttribute('aria-hidden', !open);
-      document.body.style.overflow = open ? 'hidden' : '';
+      mobileNav.classList.contains('open') ? closeNav() : openNav();
+    });
+    if (navClose) navClose.addEventListener('click', closeNav);
+    if (navBackdrop) navBackdrop.addEventListener('click', closeNav);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeNav();
     });
     mobileNav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        mobileNav.classList.remove('open');
-        hamburger.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        mobileNav.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', closeNav);
     });
   }
 
