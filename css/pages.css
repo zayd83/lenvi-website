@@ -397,6 +397,55 @@
   margin-top: 1rem;
 }
 
+/* ─────────────────────────────────────────────
+   LEGAL PAGES (Privacy / Voorwaarden)
+   ───────────────────────────────────────────── */
+.legal-body {
+  background: var(--cream);
+  padding: 5rem 0 7rem;
+}
+
+.legal-wrap {
+  max-width: 760px;
+}
+
+.legal-wrap h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  color: var(--green-dark);
+  margin: 3rem 0 0.85rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--cream-deep);
+}
+.legal-wrap h2:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
+
+.legal-wrap p {
+  color: rgba(1,31,26,0.72);
+  line-height: 1.80;
+  margin-bottom: 1rem;
+}
+
+.legal-wrap ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  color: rgba(1,31,26,0.72);
+  line-height: 1.80;
+}
+.legal-wrap ul li { margin-bottom: 0.35rem; }
+
+.legal-wrap strong { color: var(--green-dark); font-weight: 600; }
+
+.legal-wrap a { color: var(--green); text-decoration: underline; }
+.legal-wrap a:hover { color: var(--gold); }
+
+.legal-meta {
+  display: inline-block;
+  font-size: 0.82rem;
+  color: rgba(1,31,26,0.45);
+  margin-bottom: 2.5rem;
+  padding: 0.4rem 0.85rem;
+  background: var(--cream-mid);
+  border-radius: 100px;
+}
+
 .faq-section-title:first-child { border-top: none; margin-top: 0; padding-top: 0; }
 
 
