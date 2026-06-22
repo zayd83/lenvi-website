@@ -26,7 +26,7 @@
 }
 
 .nav-logo img {
-  height: 36px; width: auto;
+  height: 44px; width: auto;
 }
 
 .nav-links {
@@ -63,7 +63,7 @@
 /* Photo background */
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('../assets/images/hero-road.jpg');
+  background-image: url('../assets/images/foto3.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -309,7 +309,7 @@
   text-align: center;
 }
 
-@media (min-width: 600px) { .numbers-grid { grid-template-columns: repeat(3, 1fr); gap: 0; } }
+@media (min-width: 600px) { .numbers-grid { grid-template-columns: repeat(2, 1fr); gap: 0; } }
 
 .number-item {
   padding: 1.5rem 2rem;
@@ -569,7 +569,7 @@
 
 .about-photo-img {
   position: absolute; inset: 0;
-  background-image: url('../assets/images/consultation.jpg');
+  background-image: url('../assets/images/foto1.png');
   background-size: cover;
   background-position: center top;
 }

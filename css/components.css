@@ -244,6 +244,19 @@ textarea { min-height: 120px; resize: vertical; }
 .wa-float:hover { transform: scale(1.1); }
 .wa-float svg { width: 28px; height: 28px; fill: white; }
 
+/* ── Tel Float ── */
+.tel-float {
+  position: fixed; bottom: 1.75rem; right: calc(1.75rem + 56px + 0.75rem);
+  width: 56px; height: 56px;
+  background: #024d40; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px rgba(2,77,64,0.45);
+  z-index: 700;
+  transition: transform var(--dur) var(--ease);
+}
+.tel-float:hover { transform: scale(1.1); }
+.tel-float svg { width: 26px; height: 26px; fill: white; }
+
 /* ── FAQ Accordion ── */
 .faq-item { border-bottom: 1px solid var(--line); }
 .faq-item:first-child { border-top: 1px solid var(--line); }
