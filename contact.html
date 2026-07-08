@@ -126,7 +126,8 @@
 
       <!-- Rechts: formulier -->
       <div class="reveal d1">
-        <form name="aanmelding" method="POST" data-netlify="true" action="/bedankt.html" class="form-wrap">
+        <form name="aanmelding" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" action="/bedankt.html" class="form-wrap">
+          <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="aanmelding" />
           <div style="margin-bottom:1.75rem;">
             <span class="label">Meld uw letselschade</span>

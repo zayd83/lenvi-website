@@ -565,7 +565,8 @@
       </div>
 
       <div class="reveal d1">
-        <form name="melding-homepage" method="POST" data-netlify="true" action="/bedankt.html" class="form-wrap">
+        <form name="melding-homepage" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" action="/bedankt.html" class="form-wrap">
+          <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="melding-homepage" />
           <div style="margin-bottom:1.75rem;">
             <h3 style="color:var(--green);">Uw letselschade melden</h3>
