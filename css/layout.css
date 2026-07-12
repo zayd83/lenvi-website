@@ -716,7 +716,7 @@ footer {
   background: linear-gradient(180deg, #011F1A 0%, var(--green-deep) 35%);
   padding: 5.5rem 0 2.5rem;
   font-size: 0.88rem;
-  color: rgba(248,245,240,0.45);
+  color: rgba(248,245,240,0.70);
   position: relative;
 }
 
@@ -736,7 +736,7 @@ footer::before {
 
 .footer-logo { height: 34px; margin-bottom: 1.25rem; }
 
-.footer-tagline { max-width: 290px; line-height: 1.70; color: rgba(248,245,240,0.38); }
+.footer-tagline { max-width: 290px; line-height: 1.70; color: rgba(248,245,240,0.65) !important; }
 
 .footer-badge {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -762,17 +762,18 @@ footer::before {
 }
 
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
-.footer-col a { color: rgba(248,245,240,0.40); transition: color 0.2s; }
-.footer-col a:hover { color: var(--gold-light); }
+.footer-col a { color: rgba(248,245,240,0.75); transition: color 0.2s; }
+.footer-col a:hover { color: var(--white); }
+footer .footer-col ul > li { color: rgba(248,245,240,0.65) !important; }
 
 .footer-bottom {
   padding-top: 2.5rem;
   display: flex; flex-wrap: wrap; gap: 1rem;
   justify-content: space-between; align-items: center;
-  font-size: 0.76rem; color: rgba(248,245,240,0.25);
+  font-size: 0.76rem; color: rgba(248,245,240,0.52);
 }
-.footer-bottom a { color: rgba(248,245,240,0.32); transition: color 0.2s; }
-.footer-bottom a:hover { color: rgba(248,245,240,0.65); }
+.footer-bottom a { color: rgba(248,245,240,0.65); transition: color 0.2s; }
+.footer-bottom a:hover { color: rgba(248,245,240,0.92); }
 
 
 /* ─────────────────────────────────────────────
@@ -1221,4 +1222,45 @@ h2.founder-text { margin-top: 1.25rem; }
 
 @media (min-width: 900px) {
   .faq-home-grid { grid-template-columns: 1fr 1.2fr; }
+}
+
+
+/* ─────────────────────────────────────────────
+   MOBILE — iPhone / small screens
+   ───────────────────────────────────────────── */
+
+/* Hide hero floating card on mobile — simplifies the hero considerably */
+@media (max-width: 979px) {
+  .hero-right { display: none; }
+}
+
+@media (max-width: 767px) {
+  /* Hero */
+  .hero { padding: 7rem 0 5rem; min-height: auto; }
+  .hero-scroll { display: none; }
+  .hero-left h1 { font-size: clamp(2.4rem, 9vw, 3.5rem); }
+
+  /* Section paddings */
+  .why-section { padding: 6rem 0; }
+  .process-section { padding: 6rem 0; }
+  .faq-home-section { padding: 5rem 0; }
+  .cta-strip { padding: 5rem 0; }
+  .page-cta { padding: 5rem 0; }
+
+  /* Inner page hero */
+  .page-hero { padding: 9rem 0 5rem; min-height: auto; }
+
+  /* About section */
+  .about-content { padding: 4rem 1.5rem; }
+  .about-photo { min-height: 320px; }
+
+  /* Werkwijze timeline */
+  .ww-step { grid-template-columns: 60px 1fr; gap: 1.5rem; padding: 2rem 0; }
+  .ww-steps::before { left: 1.75rem; }
+
+  /* Process steps */
+  .process-step { padding: 2rem 1.5rem 1.75rem; }
+
+  /* Contact page */
+  .about-content { padding: 4rem 1.5rem; }
 }
