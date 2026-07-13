@@ -148,7 +148,7 @@
 
 .hero-sub {
   font-size: 1.05rem; line-height: 1.75;
-  color: rgba(248,245,240,0.62);
+  color: var(--white);
   margin: 1.75rem 0 2.5rem;
   max-width: 480px;
 }
@@ -165,7 +165,7 @@
   display: flex; align-items: center; gap: 0.5rem;
   font-size: 0.77rem; font-weight: 700;
   letter-spacing: 0.05em; text-transform: uppercase;
-  color: rgba(248,245,240,0.48);
+  color: var(--white);
 }
 .hero-trust-item::before {
   content: '';
@@ -215,7 +215,7 @@
 }
 
 .hero-card-sub {
-  font-size: 0.88rem; color: rgba(248,245,240,0.50);
+  font-size: 0.88rem; color: var(--white);
   line-height: 1.65; margin-bottom: 1.75rem;
 }
 
@@ -246,7 +246,7 @@
 .hero-stat-label {
   font-size: 0.74rem; font-weight: 700;
   letter-spacing: 0.07em; text-transform: uppercase;
-  color: rgba(248,245,240,0.40);
+  color: var(--white);
 }
 
 .hero-card-cta {
@@ -269,12 +269,12 @@
   z-index: 3; display: flex; flex-direction: column;
   align-items: center; gap: 0.6rem;
   font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
-  color: rgba(248,245,240,0.35);
+  color: var(--white);
   animation: scroll-bounce 2.5s ease-in-out infinite;
 }
 
 .hero-scroll svg {
-  width: 20px; height: 20px; stroke: rgba(248,245,240,0.35); fill: none;
+  width: 20px; height: 20px; stroke: var(--white); fill: none;
   stroke-width: 1.5; stroke-linecap: round;
 }
 
@@ -386,7 +386,7 @@
 }
 
 .why-header h2 { color: var(--white); }
-.why-header p { color: rgba(248,245,240,0.52); max-width: 400px; font-size: 1rem; margin-top: 1rem; }
+.why-header p { color: var(--white); max-width: 400px; font-size: 1rem; margin-top: 1rem; }
 
 .why-cards {
   display: grid;
@@ -454,7 +454,7 @@
 .why-card-icon svg { width: 24px; height: 24px; }
 
 .why-card h3 { color: var(--white); margin-bottom: 0.85rem; font-size: 1.2rem; letter-spacing: -0.01em; }
-.why-card p { color: rgba(248,245,240,0.55); font-size: 0.93rem; line-height: 1.75; }
+.why-card p { color: var(--white); font-size: 0.93rem; line-height: 1.75; }
 
 
 /* ─────────────────────────────────────────────
@@ -627,7 +627,7 @@
 .about-content h2 { color: var(--white); margin-top: 1.25rem; font-size: clamp(1.9rem, 3.5vw, 2.75rem); }
 
 .about-content p {
-  color: rgba(248,245,240,0.58);
+  color: var(--white);
   margin-top: 1.25rem; line-height: 1.78; font-size: 1rem;
 }
 
@@ -704,7 +704,7 @@
 }
 
 .cta-strip-text h2 { color: var(--white); font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
-.cta-strip-text p { color: rgba(248,245,240,0.50); margin-top: 0.75rem; max-width: 420px; }
+.cta-strip-text p { color: var(--white); margin-top: 0.75rem; max-width: 420px; }
 
 .cta-strip-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -816,7 +816,7 @@ footer .footer-col ul > li { color: var(--white) !important; }
   text-shadow: 0 2px 24px rgba(1,14,11,0.45);
 }
 .page-hero-content p {
-  color: rgba(248,245,240,0.62);
+  color: var(--white);
   font-size: 1.08rem; margin-top: 1.4rem; max-width: 520px; line-height: 1.78;
 }
 
@@ -858,7 +858,7 @@ footer .footer-col ul > li { color: var(--white) !important; }
 
 .page-cta-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
 .page-cta-inner h2 { color: var(--white); }
-.page-cta-inner p { color: rgba(248,245,240,0.52); margin-top: 1rem; font-size: 1.05rem; }
+.page-cta-inner p { color: var(--white); margin-top: 1rem; font-size: 1.05rem; }
 .page-cta-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; }
 
 
@@ -1010,7 +1010,7 @@ footer .footer-col ul > li { color: var(--white) !important; }
   color: var(--gold-light); display: block; margin-bottom: 1.5rem;
 }
 
-.founder-visual p { color: rgba(248,245,240,0.58); font-size: 0.94rem; line-height: 1.75; }
+.founder-visual p { color: var(--white); font-size: 0.94rem; line-height: 1.75; }
 
 .founder-line { width: 40px; height: 1px; background: var(--gold); margin: 2rem 0; }
 
@@ -1018,7 +1018,7 @@ footer .footer-col ul > li { color: var(--white) !important; }
 
 .founder-contact-row {
   display: flex; align-items: center; gap: 0.65rem;
-  font-size: 0.86rem; color: rgba(248,245,240,0.55);
+  font-size: 0.86rem; color: var(--white);
 }
 .founder-contact-row svg { width: 14px; height: 14px; fill: var(--gold); flex-shrink: 0; }
 
