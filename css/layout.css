@@ -149,7 +149,7 @@
 .hero-sub {
   font-size: 1.05rem; line-height: 1.75;
   color: var(--white);
-  margin: 1.75rem 0 2.5rem;
+  margin: 1.75rem auto 2.5rem;
   max-width: 480px;
 }
 
@@ -1239,7 +1239,7 @@ h2.founder-text { margin-top: 1.25rem; }
   .hero { padding: 7rem 0 5rem; min-height: auto; }
   .hero-scroll { display: none; }
   .hero-left h1 { font-size: clamp(2.4rem, 9vw, 3.5rem); }
-  .hero-sub { margin: 1.25rem 0 2rem; font-size: 1rem; }
+  .hero-sub { margin: 1.25rem auto 2rem; font-size: 1rem; }
   .hero-trust { gap: 1rem; margin-top: 2rem; padding-top: 1.5rem; }
 
   /* Section paddings */
