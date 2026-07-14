@@ -1,4 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0E2444"/>
-  <text x="16" y="23" font-family="Georgia, serif" font-size="22" font-weight="500" font-style="italic" fill="#B89968" text-anchor="middle">L</text>
+  <rect width="32" height="32" rx="6" fill="#024d40"/>
+  <g transform="translate(4,0) scale(0.282)">
+    <path d="M13.49,14.31h52.34c3.15,0,5.72,2.56,5.72,5.72H19.21c-3.15,0-5.72-2.56-5.72-5.72h0Z" fill="#B49D72"/>
+    <path d="M65.83,103.42H13.49c0-3.16,2.56-5.72,5.72-5.72h52.34c0,3.16-2.56,5.72-5.72,5.72Z" fill="#F8F5F0"/>
+    <rect x="34.87" y="31.74" width="5.41" height="54.1" fill="#F8F5F0"/>
+    <rect x="21.89" y="56.08" width="54.1" height="5.41" transform="translate(-9.84 107.73) rotate(-90)" fill="#B49D72"/>
+    <path d="M59.05,23.56H23.27v5.65h34.22v56.63h5.72V27.72c0-2.3-1.86-4.16-4.16-4.16Z" fill="#B49D72"/>
+    <path d="M27.44,94.11h35.78v-5.65H29V31.83h-5.72v58.12c0,2.3,1.86,4.16,4.16,4.16Z" fill="#F8F5F0"/>
+  </g>
 </svg>
